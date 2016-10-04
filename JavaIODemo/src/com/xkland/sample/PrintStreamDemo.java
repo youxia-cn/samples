@@ -33,7 +33,7 @@ public class PrintStreamDemo {
         String desc;
         double total = 0.0;
         try(Scanner s = new Scanner(new BufferedReader(new FileReader(filename)))){
-            s.useDelimiter("\n");
+            s.useDelimiter("\r\n");
             while (s.hasNext()) {
                 price = s.nextDouble();
                 unit = s.nextInt();
